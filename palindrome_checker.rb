@@ -17,8 +17,8 @@ def reversify(string)
 
   reversed_string = reversed_array.join('')
   string = string_array.join('')
-  
-  string == reversed_string ? true : false
+
+  string == reversed_string
 end
 
 
