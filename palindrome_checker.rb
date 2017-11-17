@@ -3,16 +3,21 @@ require 'colorize'
 
 def reversify(string)
   string_array = string.split('')
+
   string_array.delete(' ')
   string_array.delete(',')
   string_array.delete('.')
   string_array.delete('!')
   string_array.delete('?')
   string_array.delete("'")
+
   reversed_array = []
+
   string_array.each { |char| reversed_array.unshift(char) }
+
   reversed_string = reversed_array.join('')
   string = string_array.join('')
+  
   string == reversed_string ? true : false
 end
 
