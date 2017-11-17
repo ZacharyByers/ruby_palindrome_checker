@@ -13,12 +13,9 @@ def reversify(string)
   string_array.each { |char| reversed_array.unshift(char) }
   reversed_string = reversed_array.join('')
   string = string_array.join('')
-  if string == reversed_string
-    true
-  else
-    false
-  end
+  string == reversed_string ? true : false
 end
+
 
 while true
   puts "Enter a phrase, and I'll tell you if it's a palindrome! (or 'q' to quit)".yellow
